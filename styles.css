@@ -1,0 +1,78 @@
+@import url(styles/header.css);
+@import url(styles/banner.css);
+@import url(styles/carrossel.css);
+@import url(styles/topicos.css);
+@import url(styles/newsletter.css);
+@import url(styles/footer.css);
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap');
+
+:root {
+    --cor-de-fundo: #EBECEE;
+    --branco: #ffffff;
+    --laranja: #EB9B00;
+    --azul: #002F52;
+    --gradiente-azul: linear-gradient(98deg, #002F52 35.49%, #326589 165.37%);
+    --grafite-85: #000000D9;
+    --preto: #000;
+    --cinza: #858585;
+    --cinza-escuro: #474646;
+    --fonte-secundaria: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.cabecalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.1em 1.5em;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+.container__botao:checked~.lista-menu {
+    display: block;
+}
+
+.lista-menu__titulo,
+.lista-menu__item {
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+
+.lista-menu__link {
+    text-decoration: none;
+    background: var(--gradiente-azul);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.container__botao {
+    display: none;
+}

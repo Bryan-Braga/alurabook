@@ -1,0 +1,134 @@
+.carrossel__titulo {
+    background-color: var(--branco);
+    color: var(--laranja);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.2em 0 0.5em 0;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: .5em 0;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: var(--branco);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 1.3em;
+    padding: 1em;
+}
+
+.card__descricao {
+    display: flex;
+    justify-content: space-between;
+}
+
+.descricao {
+    padding: 0 0.6em 0 0;
+}
+
+.descricao__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+    margin: .3em 0;
+}
+
+.descricao__titulo-livro {
+    color: var(--azul);
+    font-size: 18px;
+    font-weight: 700;
+    margin: .5em 0;
+}
+
+.descricao__texto {
+    color: var(--grafite-85);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.card__botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes {
+    display: flex;
+}
+
+.botoes__item {
+    margin: .5em;
+    padding: .5em 0;
+}
+
+.botoes__ancora {
+    text-decoration: none;
+    background-color: var(--laranja);
+    color: var(--branco);
+    padding: 1em 2.2em;
+    margin: .5em 0;
+    font-weight: 700;
+}
+
+@media screen and (min-width:1024px) {
+    .carrossel__titulo {
+        font-size: 26px;
+    }
+
+    .swiper-pagination {
+        margin: 2em 0 3em 0;
+    }
+
+    .swiper {
+        width: 50%;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        display: block;
+        top: 60%;
+    }
+ 
+    .card {
+        width: 40%;
+        margin: 2em auto;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .carrossel__titulo {
+        font-size: 32px;
+    }
+
+    .swiper {
+        margin: 0;
+        width: 30%;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        display: block;
+        top: 50%;
+    }
+
+    .card {
+        width: 30%;
+        margin: 5em 0;
+    }
+
+    .carrossel__conteudo {
+        display: flex;
+        justify-content: center;
+        gap: 5em;
+    
+    }
+
+}
